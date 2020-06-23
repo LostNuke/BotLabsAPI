@@ -1,0 +1,28 @@
+{
+  "name": "botlabsapi",
+  "version": "1.0.0",
+  "description": "A simple Library to use to interact with the DiscordLabs BotLists Endpoint",
+  "main": "BotLabs.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LostNuke/BotLabsAPI.git"
+  },
+  "keywords": [
+    "Discord",
+    "API"
+  ],
+  "author": "LostNuke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LostNuke/BotLabsAPI/issues"
+  },
+  "homepage": "https://github.com/LostNuke/BotLabsAPI#readme"
+}
