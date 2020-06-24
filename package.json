@@ -1,10 +1,9 @@
 {
   "name": "botlabsapi",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A simple Library to use to interact with the DiscordLabs BotLists Endpoint",
   "main": "BotLabs.js",
   "dependencies": {
-    "discord.js": "^12.2.0",
     "request": "^2.88.2"
   },
   "devDependencies": {},

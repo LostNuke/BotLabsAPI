@@ -2,6 +2,7 @@ var request = require('request');
 
 class BotLabs {
   constructor(client, token) {
+    if(client == null || client == undefined || token == "" || token == null || token == undefined) throw "Client or Token wrong or missing!"
     this.client = client
     this.token = token
   }
