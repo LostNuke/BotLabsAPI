@@ -6,7 +6,7 @@ class BotLabs {
     this.client = client;
     this.token = token;
     this.interval = setInterval(() => this.post(), 1800000);
-    this.stop() = () => {
+    this.stop = () => {
       clearInterval(this.interval);
     }
   }
