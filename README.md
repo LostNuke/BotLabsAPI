@@ -1,18 +1,18 @@
 # BotLabsAPI
 
-A package with 2 simple methods that help you interact with the DiscordLabs Bot API
+A package with 1 simple method that help you interact with the DiscordLabs Bot API
 
 To set it up go:
 
 ```javascript
-const BotLabs = new (require('botlabsapi'))(client,"YOURTOKEN")
+const BotLabs = require('botlabsapi');
 client.on('ready', async function() {
-   BotLabs.startAuto()
+   const Lab = new BotLabs(client,"YOURTOKEN")
 })
 ```
 
 
-to get infos about a Bot you can use:
+To get info about a Bot you can use:
 
 ```javascript
  BotLabs.getInfo("BotID")
