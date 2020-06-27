@@ -1,4 +1,4 @@
- name: publish automatically to npm
+name: npmPublish
 # This workflow is triggered on pushes to the repository.
 on: push
 
