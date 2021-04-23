@@ -21,7 +21,7 @@ class BotLabs {
       fetch(`https://bots.discordlabs.org/v2/bot/${client.user.id}/stats`, 'POST').header('Content-Type', 'application/json').body(JSON.stringify(body)).send()
   }
   async getInfo(BotID) {
-    const result = (await fetch(`https://bots.discordlabs.org/v2/bot/${BotID}`, 'GET')).json();
+    const result = (await fetch(`https://bots.discordlabs.org/v2/bot/${BotID}`, 'GET').send()).json();
     if (result.error == 'true') throw result.message;
     return result;
   }
