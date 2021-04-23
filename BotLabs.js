@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const fetch = require('petitio');
 
 class BotLabs {
   constructor(client, token) {
@@ -18,10 +18,10 @@ class BotLabs {
         'server_count': this.client.guilds.cache ? this.client.guilds.cache.size : this.client.guilds.size,
         'shard_count': shards
       }
-      fetch(`https://bots.discordlabs.org/v2/bot/${client.user.id}/stats`, { method: 'POST', body: JSON.stringify(body), headers: { 'Content-Type': 'application/json' } })
+      fetch(`https://bots.discordlabs.org/v2/bot/${client.user.id}/stats`, 'POST').header('Content-Type', 'application/json').body(JSON.stringify(body)).send()
   }
   async getInfo(BotID) {
-    const result = (await fetch(`https://bots.discordlabs.org/v2/bot/${BotID}`, { method: 'GET' })).json();
+    const result = (await fetch(`https://bots.discordlabs.org/v2/bot/${BotID}`, 'GET')).json();
     if (result.error == 'true') throw result.message;
     return result;
   }
