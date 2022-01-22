@@ -4,7 +4,7 @@
   "description": "A simple Library to use to interact with the DiscordLabs BotLists Endpoint",
   "main": "BotLabs.js",
   "dependencies": {
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.1.1"
   },
   "devDependencies": {},
   "scripts": {
